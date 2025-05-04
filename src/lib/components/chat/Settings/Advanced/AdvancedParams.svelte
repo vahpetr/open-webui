@@ -33,6 +33,7 @@
 		max_tokens: null,
 		use_mmap: null,
 		use_mlock: null,
+		ctx_shift: null,
 		num_thread: null,
 		num_gpu: null,
 		template: null
@@ -1249,6 +1250,48 @@
 
 					<div class=" pr-2">
 						<Switch bind:state={params.use_mlock} />
+					</div>
+				</div>
+			{/if}
+		</div>
+
+		<div class=" py-0.5 w-full justify-between">
+			<Tooltip
+				content={$i18n.t(
+					'Enable context shift to modify how model processes sequential inputs. This can affect how the model maintains context between interactions.'
+				)}
+				placement="top-start"
+				className="inline-tooltip"
+			>
+				<div class="flex w-full justify-between">
+					<div class=" self-center text-xs font-medium">
+						{$i18n.t('ctx_shift (Ollama)')}
+					</div>
+
+					<button
+						class="p-1 px-3 text-xs flex rounded-sm transition shrink-0 outline-hidden"
+						type="button"
+						on:click={() => {
+							params.ctx_shift = (params?.ctx_shift ?? null) === null ? true : null;
+						}}
+					>
+						{#if (params?.ctx_shift ?? null) === null}
+							<span class="ml-2 self-center">{$i18n.t('Default')}</span>
+						{:else}
+							<span class="ml-2 self-center">{$i18n.t('Custom')}</span>
+						{/if}
+					</button>
+				</div>
+			</Tooltip>
+
+			{#if (params?.ctx_shift ?? null) !== null}
+				<div class="flex justify-between items-center mt-1">
+					<div class="text-xs text-gray-500">
+						{params.ctx_shift ? 'Enabled' : 'Disabled'}
+					</div>
+
+					<div class=" pr-2">
+						<Switch bind:state={params.ctx_shift} />
 					</div>
 				</div>
 			{/if}

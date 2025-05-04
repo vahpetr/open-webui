@@ -129,6 +129,7 @@
 				max_tokens: params.max_tokens !== null ? params.max_tokens : undefined,
 				use_mmap: params.use_mmap !== null ? params.use_mmap : undefined,
 				use_mlock: params.use_mlock !== null ? params.use_mlock : undefined,
+				ctx_shift: params.ctx_shift !== null ? params.ctx_shift : undefined,
 				num_thread: params.num_thread !== null ? params.num_thread : undefined,
 				num_gpu: params.num_gpu !== null ? params.num_gpu : undefined
 			},

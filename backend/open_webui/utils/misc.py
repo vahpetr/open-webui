@@ -380,6 +380,7 @@ def parse_ollama_modelfile(model_text):
         "vocab_only": bool,
         "use_mmap": bool,
         "use_mlock": bool,
+        "ctx_shift": bool,
         "num_thread": int,
     }
 

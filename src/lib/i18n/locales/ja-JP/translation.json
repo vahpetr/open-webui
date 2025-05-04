@@ -388,6 +388,7 @@
 	"Enable Community Sharing": "コミュニティ共有を有効にする",
 	"Enable Memory Locking (mlock) to prevent model data from being swapped out of RAM. This option locks the model's working set of pages into RAM, ensuring that they will not be swapped out to disk. This can help maintain performance by avoiding page faults and ensuring fast data access.": "",
 	"Enable Memory Mapping (mmap) to load model data. This option allows the system to use disk storage as an extension of RAM by treating disk files as if they were in RAM. This can improve model performance by allowing for faster data access. However, it may not work correctly with all systems and can consume a significant amount of disk space.": "",
+	"Enable context shift to modify how model processes sequential inputs. This can affect how the model maintains context between interactions.": "モデルが連続した入力を処理する方法を変更するためのコンテキストシフトを有効にします。これは、モデルがやり取りの間でコンテキストを維持する方法に影響を与える可能性があります。",
 	"Enable Message Rating": "メッセージ評価を有効にする",
 	"Enable Mirostat sampling for controlling perplexity.": "",
 	"Enable New Sign Ups": "新規登録を有効にする",

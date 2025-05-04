@@ -388,6 +388,7 @@
 	"Enable Community Sharing": "تمكين مشاركة المجتمع",
 	"Enable Memory Locking (mlock) to prevent model data from being swapped out of RAM. This option locks the model's working set of pages into RAM, ensuring that they will not be swapped out to disk. This can help maintain performance by avoiding page faults and ensuring fast data access.": "تفعيل قفل الذاكرة (mlock) لمنع إخراج بيانات النموذج من الذاكرة. يساعد هذا الخيار في الحفاظ على الأداء من خلال منع حدوث أخطاء في الوصول وضمان سرعة الوصول إلى البيانات.",
 	"Enable Memory Mapping (mmap) to load model data. This option allows the system to use disk storage as an extension of RAM by treating disk files as if they were in RAM. This can improve model performance by allowing for faster data access. However, it may not work correctly with all systems and can consume a significant amount of disk space.": "تفعيل تعيين الذاكرة (mmap) لتحميل بيانات النموذج. يسمح هذا الخيار للنظام باستخدام التخزين كامتداد للذاكرة RAM عن طريق معاملة ملفات القرص كما لو كانت في RAM. قد يحسن أداء النموذج، لكن قد لا يعمل بشكل صحيح مع جميع الأنظمة وقد يستهلك مساحة كبيرة من القرص.",
+	"Enable context shift to modify how model processes sequential inputs. This can affect how the model maintains context between interactions.": "",
 	"Enable Message Rating": "تفعيل تقييم الرسائل",
 	"Enable Mirostat sampling for controlling perplexity.": "تفعيل أخذ عينات Mirostat للتحكم في درجة التعقيد.",
 	"Enable New Sign Ups": "تفعيل عمليات التسجيل الجديدة",

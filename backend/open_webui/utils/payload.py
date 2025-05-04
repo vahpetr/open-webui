@@ -108,6 +108,7 @@ def apply_model_params_to_body_ollama(params: dict, form_data: dict) -> dict:
         "vocab_only": bool,
         "use_mmap": bool,
         "use_mlock": bool,
+        "ctx_shift": bool,
         "num_thread": int,
     }
 
